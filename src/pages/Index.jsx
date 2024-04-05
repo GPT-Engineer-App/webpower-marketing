@@ -1,5 +1,5 @@
 import { Box, Button, Container, Flex, FormControl, FormLabel, Grid, Heading, Image, Input, Link, Stack, Text, Textarea, useColorModeValue, VStack } from "@chakra-ui/react";
-import { FaEnvelope, FaGithub, FaLinkedin, FaPhone, FaReact } from "react-icons/fa";
+import { FaAngular, FaEnvelope, FaGithub, FaLinkedin, FaNodeJs, FaPhone, FaReact } from "react-icons/fa";
 
 const Index = () => {
   return (
@@ -40,7 +40,20 @@ const Index = () => {
               </Heading>
               <Text>We specialize in building interactive and performant web applications using React and its ecosystem.</Text>
             </Box>
-            {/* Add more service boxes */}
+            <Box bg={useColorModeValue("white", "gray.800")} p={6} rounded="md" shadow="md">
+              <FaAngular size={48} color="#DD0031" />
+              <Heading as="h3" size="lg" mt={4} mb={2}>
+                Angular Development
+              </Heading>
+              <Text>We build robust and scalable web applications using Angular, leveraging its powerful features and ecosystem.</Text>
+            </Box>
+            <Box bg={useColorModeValue("white", "gray.800")} p={6} rounded="md" shadow="md">
+              <FaNodeJs size={48} color="#339933" />
+              <Heading as="h3" size="lg" mt={4} mb={2}>
+                Node.js Development
+              </Heading>
+              <Text>Our team develops high-performance and scalable server-side applications using Node.js and its vast ecosystem of packages.</Text>
+            </Box>
           </Grid>
         </Container>
       </Box>
